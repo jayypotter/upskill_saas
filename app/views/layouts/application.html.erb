@@ -3,13 +3,15 @@
   <head>
     <title>Saasapp</title>
     <%= csrf_meta_tags %>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="//fonts.gstatic.com"> <!-- Google Fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto&display=swap" rel="stylesheet"> <!-- Google Fonts -->
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
