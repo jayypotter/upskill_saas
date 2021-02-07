@@ -21,7 +21,7 @@ h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+.navbar, .home-callout {
     background: #c21500;  /* fallback for old browsers */
     background: -webkit-linear-gradient(left, #ffc500, #c21500);
     background: -moz-linear-gradient(left, #ffc500, #c21500);
@@ -32,6 +32,11 @@ body {
 
 .navbar {
     border: none;
-    background: rgba(0,0,0,0);
+    
+}
 
+.home-callout {
+    margin-top: -20px;
+    padding: 50px 0 100px 0;
+    color: black;
 }
