@@ -16,27 +16,37 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
 .navbar, .home-callout {
-    background: #c21500;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(left, #ffc500, #c21500);
-    background: -moz-linear-gradient(left, #ffc500, #c21500);
-    background: -o-linear-gradient(left, #ffc500, #c21500);
-    background: linear-gradient(to right, #ffc500, #c21500);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .navbar {
     border: none;
-    
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover {
+    color: white;
+    opacity: 0.65;
 }
 
 .home-callout {
     margin-top: -20px;
     padding: 50px 0 100px 0;
-    color: black;
+    color: white;
 }
