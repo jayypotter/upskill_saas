@@ -1,9 +1,12 @@
+#GET request
 class ContactsController < ApplicationController
 def new
   @contact = Contact.new
 end
 
+#Post Request /contacts
 def create
+  #Mass asignment of form fields in to contact object
   @contact = Contact.new(contact_params)
   if @contact.save
     name = params[:contact][:name]
