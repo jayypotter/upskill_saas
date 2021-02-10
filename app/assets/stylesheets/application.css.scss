@@ -58,3 +58,8 @@ h1, h2, h3 {
     padding: 50px 0 100px 0;
     color: white;
 }
+
+// Hides log in log out notice
+.alert-notice {
+    display: none;
+}
