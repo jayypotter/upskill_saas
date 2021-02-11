@@ -23,6 +23,8 @@ h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
 
+// Navbar
+
 .navbar, .home-callout {
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
@@ -53,10 +55,16 @@ h1, h2, h3 {
     background-color: white;
 }
 
+// Homepage 
+
 .home-callout {
     margin-top: -20px;
     padding: 50px 0 100px 0;
     color: white;
+}
+
+.home-signup-links {
+    margin-top: 30px;
 }
 
 // Hides log in log out notice
