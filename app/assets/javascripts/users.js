@@ -3,7 +3,7 @@
 // Document ready
 $(document).on('turbolinks:load', function(){
   var theForm = $('#pro_form');
-  var submitBtn = $('#form-submit-btn');
+  var submitBtn = $('#form-signup8-btn');
   // Set stripe public key
   Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') )
   
@@ -33,7 +33,7 @@ $(document).on('turbolinks:load', function(){
     }
     
       // validate exp date
-    if (!Stripe.card.validateExpiryr(expMonth, expYear)) {
+    if (!Stripe.card.validateExpiry(expMonth, expYear)) {
       error = true
       alert('The exp date is incorrect');
     }
@@ -61,11 +61,8 @@ $(document).on('turbolinks:load', function(){
     // Inject card token to hidden field
     theForm.append( $('<input type="hidden" name="user[stripe_card_token]">').val(token) );
     
+    
     // Subit to rails app
     theForm.get(0).submit();
   }
-  
-  // Inject card token as hidden field in to form
-  
-  // Submit for to Rails app
 });

@@ -19,6 +19,10 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+.body {
+    position: relative;
+}
+
 h1, h2, h3 {
     font-family: 'Roboto', sans-serif;
 }
@@ -68,6 +72,19 @@ h1, h2, h3 {
 }
 
 // Hides log in log out notice
-.alert-notice {
-    display: none;
+
+.flash-container {
+  position: absolute;
+  width: 33%;
+  margin: 0 33%;
+}
+
+.alert-notice, .alert-alert {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-top: -14px;
+    position: relative;
+    color: white;
+    font-weight: bold;
 }
