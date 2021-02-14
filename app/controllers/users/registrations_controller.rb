@@ -20,5 +20,5 @@ private
     unless (params[:plan] == '1' || params[:plan] == '2')
       flash[:notice] = "Please select a membership plan to sign up."
       redirect_to root_url
+    end
   end
-end
